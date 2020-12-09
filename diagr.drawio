@@ -1,0 +1,43 @@
+<mxfile host="65bd71144e" modified="2020-11-20T16:21:43.109Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="iGg76ka4oe0k9jzeoH0p" version="13.6.5">
+    <diagram id="pCK0oIKL3CzhSbV1GiQj" name="Page-1">
+        <mxGraphModel dx="1391" dy="1628" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="iN2532IZQ4eCZQpPnYX0-37" value="Venue" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=20;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#A8DADC;strokeColor=#457B9D;swimlaneFillColor=#ffffff;fontColor=#1D3557;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="-40" width="420" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="iN2532IZQ4eCZQpPnYX0-38" value="+ID                     (INTEGER, Primary Key auto increment)&#10;+Name               (STRING,  Not Null )&#10;+City                  (STRING,  Not Null   )&#10;+State                (ENUM,     Not Null )&#10;+Address           (STRING,  Not Null )&#10;+Phone              (STRING,  Nullable )   &#10;+Genres             (SET,         Not Null )&#10;+Facebook Link (STRING,  Not Null )&#10;+Website Link    (STRING,  Not Null )==&gt;Pending&#10;+photo Link        (STRING,  Not Null )==&gt;Pending&#10;  &#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#1D3557;" parent="iN2532IZQ4eCZQpPnYX0-37" vertex="1">
+                    <mxGeometry y="30" width="420" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="iN2532IZQ4eCZQpPnYX0-39" value="Artists" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=20;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;strokeColor=#457B9D;fillColor=#A8DADC;swimlaneFillColor=#ffffff;fontColor=#1D3557;" parent="1" vertex="1">
+                    <mxGeometry x="-180" y="-34" width="430" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="iN2532IZQ4eCZQpPnYX0-40" value="+ID                     (INTEGER, Primary Key auto increment)&#10;+Name               (STRING,  Not Null )&#10;+City                  (STRING,  Not Null   )&#10;+State                (ENUM,     Not Null )&#10;+Phone              (STRING,  Nullable )   &#10;+Genres             (SET,         Not Null )&#10;+Facebook Link (STRING,  Not Null )&#10;+Website Link    (STRING,  Not Null )==&gt;Pending&#10;+photo Link        (STRING,  Not Null )==&gt;Pending&#10;  &#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=16;verticalAlign=top;resizable=0;rotatable=0;part=1;labelBackgroundColor=none;fontColor=#1D3557;" parent="iN2532IZQ4eCZQpPnYX0-39" vertex="1">
+                    <mxGeometry y="30" width="430" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="iN2532IZQ4eCZQpPnYX0-44" value="Show" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=20;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#A8DADC;strokeColor=#457B9D;swimlaneFillColor=#ffffff;fontColor=#1D3557;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="300" width="380" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="iN2532IZQ4eCZQpPnYX0-45" value="+Artist ID         (INTEGER , Not Null)&#10;+Venue ID       (INTEGER, Not Null)&#10;+Start Time     (Timestamp, Not Null)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=16;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#1D3557;" parent="iN2532IZQ4eCZQpPnYX0-44" vertex="1">
+                    <mxGeometry y="30" width="380" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="iN2532IZQ4eCZQpPnYX0-46" value="The Website Features" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=20;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="650" width="660" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="iN2532IZQ4eCZQpPnYX0-47" value="-add new venue , artist , show" style="text;strokeColor=#457B9D;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;fontColor=#1D3557;fillColor=#ffffff;" parent="iN2532IZQ4eCZQpPnYX0-46" vertex="1">
+                    <mxGeometry y="50" width="660" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="iN2532IZQ4eCZQpPnYX0-48" value="-search for venue , artist" style="text;strokeColor=#457B9D;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;fontColor=#1D3557;fillColor=#ffffff;" parent="iN2532IZQ4eCZQpPnYX0-46" vertex="1">
+                    <mxGeometry y="80" width="660" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="iN2532IZQ4eCZQpPnYX0-58" value="-show Shows, Artists and Venues( venues in the same city&amp;state show together)" style="text;strokeColor=#457B9D;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;fontColor=#1D3557;fillColor=#ffffff;" parent="iN2532IZQ4eCZQpPnYX0-46" vertex="1">
+                    <mxGeometry y="110" width="660" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="iN2532IZQ4eCZQpPnYX0-59" value="-every venue and artist can show the upcoming shows and Past shows" style="text;strokeColor=#457B9D;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;fontColor=#1D3557;labelBackgroundColor=none;fillColor=#ffffff;" parent="iN2532IZQ4eCZQpPnYX0-46" vertex="1">
+                    <mxGeometry y="140" width="660" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
